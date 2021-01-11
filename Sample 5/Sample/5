@@ -1,0 +1,70 @@
+#include <iostream>
+using namespace std;
+
+void if_grade(int score){
+if (score==9 or score==10)
+cout<<"The grade is an A"<<endl;
+else if (score==8)
+cout<<"The grade is a B"<<endl;
+else if (score==7)
+cout<<"The grade is a B-"<<endl;
+else if(score==6)
+cout<<"The grade is a C+"<<endl;
+else if(score==5)
+cout<<"The grade is a C"<<endl;
+else if (score==4)
+cout<<"The grade is a D+"<<endl;
+else if (score<4 and score>=0)
+cout<<"The grade is an F"<<endl;
+else
+cout<<"That is not a valid score"<<endl;
+}
+void switch_grade (int score)
+{switch(score) {
+case 10:
+cout<<"The grade is an A"<<endl;
+break;
+case 9:
+cout<< "The grade is an A" <<endl;
+break;
+case 8:
+cout<<"The grade is a B"<<endl;
+break;
+case 7:
+cout<<"The grade is a B-"<<endl;
+break;
+case 6:
+cout<<"The grade is a C+"<<endl;
+break;
+case 5:
+cout<<"The grade is a C"<<endl;
+break;
+case 4:
+cout<<"The grade is a D+"<<endl;
+break;
+case 3:
+cout<<"The grade is an F"<<endl;
+
+
+break;
+case 2:
+cout<<"The grade is an F"<<endl;
+break;
+case 1:
+cout<<"The grade is an F"<<endl;
+break;
+case 0:
+cout<< "The grade is an F"<<endl;
+break;
+default:
+cout<<"That is not a valid score"<<endl;
+break;
+}}
+int main() {
+int score;
+cout<<"Enter the score: ";
+cin>>score;
+if_grade(score);
+switch_grade(score);
+return 0;
+}
