@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+double Integer(double num1);
+double Decimal(double num1);
+int main()
+{
+double x;
+int y;
+float z;
+cout<<"\nEnter a number to get Integer and Decimal parts:";
+cin>>x;
+y=Integer(x);
+z=Decimal(x);
+cout<<"\nInteger part :"<<y;
+cout<<"\nFractional part :"<<z;
+return 0;
+}
+double Integer(double num1)
+{
+int a;
+
+
+a=num1;
+return a;
+};
+double Decimal(double num1)
+{
+double c;
+c=num1-Integer(num1);
+return c;
+
